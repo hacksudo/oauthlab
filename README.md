@@ -11,8 +11,6 @@ This lab demonstrates how an attacker can bypass authentication using **JWT alg=
 
 ## 📸 Screenshots
 
-> *(Replace with your actual screenshots later)*  
-
 ### Login Page
 <img width="1600" height="680" alt="1" src="https://github.com/user-attachments/assets/e03e1f05-8df6-4823-8abd-25d2d29a8f6a" />
 
@@ -128,5 +126,6 @@ This `README.md` is **big and professional** — includes:
 ---
 
 ⚡ Do you want me to also create a **docs/** folder with sample screenshots (matrix login & neon dashboard) so you can commit them to GitHub for a complete visual README?
+
 
 
