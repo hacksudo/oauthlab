@@ -14,11 +14,12 @@ This lab demonstrates how an attacker can bypass authentication using **JWT alg=
 > *(Replace with your actual screenshots later)*  
 
 ### Login Page
-![Login Page](<img width="1600" height="680" alt="1" src="https://github.com/user-attachments/assets/1af4df01-4253-4436-9d4d-8570eba8b268" />)
+<img width="1600" height="680" alt="1" src="https://github.com/user-attachments/assets/e03e1f05-8df6-4823-8abd-25d2d29a8f6a" />
+
 
 
 ### Dashboard
-![Dashboard](<img width="1600" height="706" alt="2" src="https://github.com/user-attachments/assets/2dc65de4-718a-4d81-aaae-b73a8fd31e83" />)
+<img width="1600" height="706" alt="2" src="https://github.com/user-attachments/assets/ee5aef1e-02f9-48e3-881a-aa739d0767a9" />
 
 ---
 
@@ -39,9 +40,10 @@ Your role: admin
 🎉 FLAG: oauth_bypass_success_123 🎉
 ```
 
-🌐 Deploying on Apache2 (Local or VM)
+##🌐 Deploying on Apache2 (Local or VM)
 
 Follow these steps if you want to deploy the lab without Docker, directly using Apache2 + PHP.
+```bash
 📌 Step 1: Install Apache2 & PHP
 
 sudo apt update
@@ -51,27 +53,31 @@ Enable Apache on startup:
 
 sudo systemctl enable apache2
 sudo systemctl start apache2
+```
 
-📌 Step 2: Clone the Repository
-
+##📌 Step 2: Clone the Repository
+```bash
 cd /var/www/html
 sudo rm -rf *
 sudo git clone https://github.com/hacksudo/oauthlab.git .
 
 (the . at the end puts files directly into /var/www/html)
-📌 Step 3: Fix Permissions
+```
 
+##📌 Step 3: Fix Permissions
+```bash
 sudo chown -R www-data:www-data /var/www/html
 sudo chmod -R 755 /var/www/html
+```
 
-📌 Step 5: Access the Lab
+##📌 Step 5: Access the Lab
 
 Open in your browser:
-
+```bash
 http://<your-server-ip>/
 
     Example: http://127.0.0.1/ or http://192.168.1.100/
-
+```
 ###Development
 ##Build Locally
 ```bash
@@ -82,7 +88,7 @@ docker run -d -p 8080:80 oauthlab
 ```
 
 ##📚Learning Objectives
-
+```bash
     Understand OAuth 2.0 authorization code flow
 
     Explore JWT vulnerabilities (alg: none)
@@ -90,8 +96,8 @@ docker run -d -p 8080:80 oauthlab
     Practice Burp Suite exploitation
 
     Learn session hijacking and insecure token storage
-
-    ##👨‍💻 Author
+```
+##👨‍💻 Author
 
 Hacksudo
 Security Researcher | CTF Builder | Developer
@@ -107,7 +113,7 @@ If you find this project useful, please:
     🔀 Submit pull requests
 
 
-    ## License
+## License
 ---
 
 This `README.md` is **big and professional** — includes:
@@ -122,4 +128,5 @@ This `README.md` is **big and professional** — includes:
 ---
 
 ⚡ Do you want me to also create a **docs/** folder with sample screenshots (matrix login & neon dashboard) so you can commit them to GitHub for a complete visual README?
+
 
