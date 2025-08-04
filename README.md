@@ -31,14 +31,14 @@ docker run -d -p 8080:80 hacksudo/oauthlab:latest
 Open in your browser:
 http://localhost:8080/
 
-##Expected Flag
+## Expected Flag
 ```bash
 Welcome, hacker
 Your role: admin
 🎉 FLAG: oauth_bypass_success_123 🎉
 ```
 
-##🌐 Deploying on Apache2 (Local or VM)
+## 🌐 Deploying on Apache2 (Local or VM)
 
 Follow these steps if you want to deploy the lab without Docker, directly using Apache2 + PHP.
 ```bash
@@ -53,7 +53,7 @@ sudo systemctl enable apache2
 sudo systemctl start apache2
 ```
 
-##📌 Step 2: Clone the Repository
+## 📌 Step 2: Clone the Repository
 ```bash
 cd /var/www/html
 sudo rm -rf *
@@ -62,13 +62,13 @@ sudo git clone https://github.com/hacksudo/oauthlab.git .
 (the . at the end puts files directly into /var/www/html)
 ```
 
-##📌 Step 3: Fix Permissions
+## 📌 Step 3: Fix Permissions
 ```bash
 sudo chown -R www-data:www-data /var/www/html
 sudo chmod -R 755 /var/www/html
 ```
 
-##📌 Step 5: Access the Lab
+## 📌 Step 5: Access the Lab
 
 Open in your browser:
 ```bash
@@ -76,8 +76,8 @@ http://<your-server-ip>/
 
     Example: http://127.0.0.1/ or http://192.168.1.100/
 ```
-###Development
-##Build Locally
+### Development
+## Build Locally
 ```bash
 git clone https://github.com/hacksudo/oauthlab.git
 cd oauthlab
@@ -85,7 +85,7 @@ docker build -t oauthlab .
 docker run -d -p 8080:80 oauthlab
 ```
 
-##📚Learning Objectives
+## 📚Learning Objectives
 ```bash
     Understand OAuth 2.0 authorization code flow
 
@@ -95,12 +95,12 @@ docker run -d -p 8080:80 oauthlab
 
     Learn session hijacking and insecure token storage
 ```
-##👨‍💻 Author
+## 👨‍💻 Author
 
 Hacksudo
 Security Researcher | CTF Builder | Developer
 
-##⭐ Contribute
+## ⭐ Contribute
 
 If you find this project useful, please:
 
@@ -126,6 +126,7 @@ This `README.md` is **big and professional** — includes:
 ---
 
 ⚡ Do you want me to also create a **docs/** folder with sample screenshots (matrix login & neon dashboard) so you can commit them to GitHub for a complete visual README?
+
 
 
 
